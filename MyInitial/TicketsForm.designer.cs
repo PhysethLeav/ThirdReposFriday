@@ -38,6 +38,7 @@
             this.radBox = new System.Windows.Forms.RadioButton();
             this.grpSection = new System.Windows.Forms.GroupBox();
             this.cmdCalculate = new System.Windows.Forms.Button();
+            this.radBlackStall = new System.Windows.Forms.RadioButton();
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,12 +119,13 @@
             // 
             // grpSection
             // 
+            this.grpSection.Controls.Add(this.radBlackStall);
             this.grpSection.Controls.Add(this.radBox);
             this.grpSection.Controls.Add(this.radGeneral);
             this.grpSection.Controls.Add(this.radBalcony);
             this.grpSection.Location = new System.Drawing.Point(52, 141);
             this.grpSection.Name = "grpSection";
-            this.grpSection.Size = new System.Drawing.Size(139, 111);
+            this.grpSection.Size = new System.Drawing.Size(139, 162);
             this.grpSection.TabIndex = 9;
             this.grpSection.TabStop = false;
             this.grpSection.Text = "Section";
@@ -137,6 +139,18 @@
             this.cmdCalculate.Text = "Calculate";
             this.cmdCalculate.UseVisualStyleBackColor = true;
             this.cmdCalculate.Click += new System.EventHandler(this.cmdCalculate_Click);
+            // 
+            // radBlackStall
+            // 
+            this.radBlackStall.AutoSize = true;
+            this.radBlackStall.Location = new System.Drawing.Point(26, 103);
+            this.radBlackStall.Name = "radBlackStall";
+            this.radBlackStall.Size = new System.Drawing.Size(75, 17);
+            this.radBlackStall.TabIndex = 9;
+            this.radBlackStall.TabStop = true;
+            this.radBlackStall.Text = "Black Stall";
+            this.radBlackStall.UseVisualStyleBackColor = true;
+            this.radBlackStall.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // TicketsForm
             // 
@@ -172,6 +186,7 @@
         private System.Windows.Forms.RadioButton radBox;
         private System.Windows.Forms.GroupBox grpSection;
         private System.Windows.Forms.Button cmdCalculate;
+        private System.Windows.Forms.RadioButton radBlackStall;
     }
 }
 
